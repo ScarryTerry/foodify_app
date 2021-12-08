@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, FloatingLabel, Form, Modal, Row } from 'react-bootstrap';
-import './Modal.css';
 
 const addCustomDish = ({ show, onHide }) => {
   return (

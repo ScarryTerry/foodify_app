@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { publicRoutes } from '../routes';
 import {RANDOM_DISH_ROUTE} from '../utils/consts';
+import { Context } from '../index';
 
 const AppRouter = () => {
+    const {dish} = useContext(Context);
     return (
         <Switch>
             {publicRoutes.map(({path, Component}) =>

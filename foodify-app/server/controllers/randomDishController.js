@@ -4,7 +4,7 @@ class RandomDishController {
 
   async getPage(req, res) {
     const randomDish = await new FoodifyAPI().getRecipe(); 
-    res.json(randomDish)
+    return console.log(randomDish);
   }
 }
 
