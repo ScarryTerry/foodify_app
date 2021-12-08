@@ -9,8 +9,8 @@ const randomDish = () => {
     <Container style={{display: 'flex', justifyContent: 'center'}}>
       <div>
       <RecipeItem />
-      <Button variant="secondary" className="mt-1 mx-1" style={{width: 143}}>Skip</Button>
-      <Button variant="secondary" className="mt-1 mx-1" style={{width: 143}}>Like</Button>
+      <Button variant="secondary" className="mt-1 m-1" style={{width: 165}}>Skip</Button>
+      <Button variant="secondary" className="mt-1 m-1" style={{width: 165}}>Like</Button>
       </div>
     </Container>
     </div>
