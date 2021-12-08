@@ -1,8 +1,11 @@
-class randomDishController {
+const FoodifyAPI = require("../API/foodifyAPI");
 
-  // async getPage(req, res) {
+class RandomDishController {
 
-  // }
+  async getPage(req, res) {
+    const randomDish = await new FoodifyAPI().getRecipe(); 
+    res.json(randomDish)
+  }
 }
 
-module.exports = new randomDishController();
+module.exports = RandomDishController;
