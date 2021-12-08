@@ -24,7 +24,7 @@ export default class Modal extends React.Component {
                 fixed
               />
             </FloatingLabel>
-            <Button variant={"outline-dark"} onClick={() => this.setState({ isOpen: false })} className="mt-3 w-100">Add custom dish</Button>
+            <Button variant={"outline-secondary"} onClick={() => this.setState({ isOpen: false })} className="mt-3 w-100">Add custom dish</Button>
           </div>
         </div>)}
       </React.Fragment>
