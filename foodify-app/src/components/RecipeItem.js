@@ -6,14 +6,14 @@ const RecipeItem = () => {
   return (
     <div className="mt-5">
     <Col md={3}>
-        <Card style={{ width: 350, cursor: "pointer"}} className="d-flex align-items-center" border={"dark"}>
+        <Card style={{ width: 345, cursor: "pointer"}} className="d-flex align-items-center" border={"dark"}>
           <Image width={150} height={150} src={staticImage}/>
           <div>
-          <Row style={{ maxWidth: 345}}>
+          <Row style={{ maxWidth: 340}}>
             <h4>Dish Name</h4>
-            <text>
+            <Row>
             Some Text
-            </text>
+            </Row>
           </Row>
           </div>
         </Card>

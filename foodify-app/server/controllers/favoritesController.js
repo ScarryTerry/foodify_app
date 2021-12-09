@@ -1,9 +1,8 @@
-class favoritesDishController {
+class FavoritesDishController {
 
-  // async getPage(req, res) {
-    
-
-  // }
+  async getPage(req, res) {
+    res.status(200).json({message: "OkayF"})
+  }
 }
 
-module.exports = new favoritesDishController();
+module.exports = FavoritesDishController;

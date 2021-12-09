@@ -1,24 +1,9 @@
-const uuid = require("uuid");
-const path = require("path");
+class AddCustomDishController {
 
-class addCustomDishController {
-
-  // async getPage(req, res) {
-
-  // }
-
-  // async create(req, res) {
-  //   try {
-  //     const {name, description} = req.body;
-  //     const {img} = req.files;
-  //     let fileName = `${uuid.v4()}.jpg`;
-  //     img.mv(path.resolve(__dirname, "..", "static", fileName));
-
-
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // }
+  async getPage(req, res) {
+    await 
+    res.status(200).json({message: "OkayA"})
+  }
 }
 
-module.exports = new addCustomDishController();
+module.exports = AddCustomDishController;
