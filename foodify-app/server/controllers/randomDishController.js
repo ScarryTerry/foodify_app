@@ -8,4 +8,4 @@ class RandomDishController {
   }
 }
 
-module.exports = RandomDishController;
+module.exports = new RandomDishController();
