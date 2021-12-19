@@ -6,11 +6,13 @@ const AddCustomDishController = require("../controllers/addCustomDishController"
 class DishRouter {
 
   getRoutes() {
-    router.get("/randomDish", (req, res) => (new RandomDishController().getPage(req, res)));
+    router.get("/randomDish", (req, res) => (RandomDishController.getPage(req, res)));
 
-    router.get("/favorites", (req, res) => (new FavoritesDishController().getPage(req, res)));
+    router.post("/addFavorites", (req, res) => (FavoritesDishController.addToFavorites(req, res)));
 
-    router.get("/addCustomDish", (req, res) => (new AddCustomDishController().getPage(req, res)));
+    router.post("/removeFavorites", (req, res) => (FavoritesDishController.removeFromFavorites(req, res)));
+
+    router.post("/addCustomDish", (req, res) => (AddCustomDishController.addCustomDish(req, res)));
 
     return router;
   }
