@@ -21,7 +21,7 @@ class FavoritesDishController {
       recipe: recipe,
       img: img,
       srcYoutube: srcYoutube
-    })
+    });
 
     return res.status(200).json(dish);
   }
