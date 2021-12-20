@@ -2,6 +2,11 @@ const favDish = require("../model/favDish");
 
 class FavoritesDishController {
 
+  async getAllrecipes(req, res) {
+    const data = await favDish.find();
+    return res.json(data);
+  }
+
   async addToFavorites(req, res) {
     const {dishName, recipe, img, srcYoutube } = req.body;
 
