@@ -3,7 +3,7 @@ const CustDish = require("../model/custDish");
 class AddCustomDishController {
 
   async addCustomDish(req, res) {
-    const { dishName, recipe, img } = req.body;
+    const { dishName, recipe } = req.body;
 
     const existingRecipe = await CustDish.findOne({ dishName });
 
@@ -15,7 +15,7 @@ class AddCustomDishController {
       dishName: dishName,
       recipe: recipe,
     });
-    
+
     return res.status(200).json(dish);
   }
 
@@ -26,7 +26,7 @@ class AddCustomDishController {
   }
 
   async removeCustomDish(req, res) {
-    const {dishName} = req.body;
+    const { dishName } = req.body;
 
     let dish = await CustDish.findOne({ dishName });
 
